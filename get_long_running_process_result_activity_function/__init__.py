@@ -1,7 +1,6 @@
 from shared_code.key_value_store import KeyValueStore
 
 
-async def main(instanceid: str) -> bool:
+async def main(instanceid: str) -> str:
     kvs = KeyValueStore(instanceid)
-    value = await kvs.get_value('Long_Running_Process_Finished')
-    return value
+    return await kvs.get_value('Long_Running_Process_Result')
