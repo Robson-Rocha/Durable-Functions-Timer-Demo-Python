@@ -1,5 +1,3 @@
-import logging
-
 import azure.functions as func
 
 from shared_code.key_value_store import KeyValueStore
